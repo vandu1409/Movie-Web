@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="MovieWeb" transaction-type="RESOURCE_LOCAL">
+		<class>edu.vandu.model.Episode</class>
+		<class>edu.vandu.model.Rating</class>
+		<class>edu.vandu.model.Token</class>
+		<class>edu.vandu.model.User</class>
+		<class>edu.vandu.model.FavouriteMovie</class>
+		<class>edu.vandu.model.Movie</class>
+		<class>edu.vandu.model.View</class>
+		<class>edu.vandu.model.WatchedMovie</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=movie_web"/>
+			<property name="javax.persistence.jdbc.user" value="sa"/>
+			<property name="javax.persistence.jdbc.password" value="songlong"/>
+			<property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+		</properties>
+	</persistence-unit>
+</persistence>
